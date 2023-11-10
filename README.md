@@ -105,6 +105,7 @@ except Exception as e:
 This ensures that any issues during the request process are logged.
 
 ### Request Throttling
+
 To manage the load on the server, the script waits for 5 seconds between registration attempts:
 
 python
