@@ -82,7 +82,6 @@ It iterates over a copy of the `courses` list, trying to register for each cours
 The script checks the API response after each registration attempt:
 
 ```python
-Copy code
 if response['jobs'][0]['result'] == 'OK':
     print(f"{course[0]} registered successfully.")
     courses.remove(course)
