@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 load_dotenv()
 ```
 
-
+`load_dotenv()` reads the `.env` file, which should be located in the same directory as the script, and loads the variables into the environment. This is where the script gets sensitive information, such as the `Authorization` token.
 
 # Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
