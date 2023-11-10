@@ -33,7 +33,7 @@ def register_course(course_code, units):
     return response.json()
 
 while courses:
-    for course in courses.copy():  # Iterate over a copy to safely remove items
+    for course in courses.copy():
         try:
             response = register_course(course[0], course[1])
             if response['jobs'][0]['result'] == 'OK':
