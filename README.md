@@ -92,7 +92,7 @@ else:
 
 If a course is successfully registered, it's removed from the list. Otherwise, an error message is displayed.
 
-###  Error Handling
+### Error Handling
 
 In case of exceptions, the script captures and prints the error:
 
@@ -104,7 +104,7 @@ except Exception as e:
 
 This ensures that any issues during the request process are logged.
 
-Request Throttling
+### Request Throttling
 To manage the load on the server, the script waits for 5 seconds between registration attempts:
 
 python
