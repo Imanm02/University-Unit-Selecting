@@ -66,8 +66,6 @@ It constructs the data payload with the course details and sends a POST request 
 The script runs a loop to attempt course registration:
 
 ```python
-python
-Copy code
 while courses:
     for course in courses.copy():
         ...
