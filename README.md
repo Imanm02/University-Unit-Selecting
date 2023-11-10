@@ -59,7 +59,57 @@ def register_course(course_code, units):
     return response.json()
 ```
 
+It constructs the data payload with the course details and sends a POST request to the university's course registration API.
 
+### Main Registration Loop
+
+The script runs a loop to attempt course registration:
+
+```python
+python
+Copy code
+while courses:
+    for course in courses.copy():
+        ...
+        response = register_course(course[0], course[1])
+        ...
+```
+
+It iterates over a copy of the `courses` list, trying to register for each course. After each attempt, the script sleeps for a short period to prevent rapid-fire requests.
+
+### Handling Responses
+
+The script checks the API response after each registration attempt:
+
+```python
+Copy code
+if response['jobs'][0]['result'] == 'OK':
+    print(f"{course[0]} registered successfully.")
+    courses.remove(course)
+else:
+    print(f"Couldn't register {course[0]}. ERROR: {response['jobs'][0]['result']}")
+```
+
+If a course is successfully registered, it's removed from the list. Otherwise, an error message is displayed.
+
+Error Handling
+In case of exceptions, the script captures and prints the error:
+
+python
+Copy code
+except Exception as e:
+    print(f"An error occurred: {e}")
+This ensures that any issues during the request process are logged.
+
+Request Throttling
+To manage the load on the server, the script waits for 5 seconds between registration attempts:
+
+python
+Copy code
+time.sleep(5)
+This delay helps to avoid overwhelming the server or hitting rate limits.
+
+This automation script streamlines the course registration process. However, users should comply with Sharif University's policies regarding automated interactions with their systems.
 
 # Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
