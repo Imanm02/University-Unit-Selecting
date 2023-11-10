@@ -7,7 +7,20 @@ This repository contains a Python script designed to automate taking courses in 
 
 ## Code Walkthrough
 
-Here is a section-by-section walkthrough of the script:
+This script is designed to automate the process of course registration at Sharif University of Technology. Below is a detailed walkthrough of the script components and functionalities.
+
+### Environment Setup
+
+Before the script starts, it loads necessary environment variables:
+
+```python
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+```
+
+
 
 # Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
