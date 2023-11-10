@@ -92,13 +92,16 @@ else:
 
 If a course is successfully registered, it's removed from the list. Otherwise, an error message is displayed.
 
-Error Handling
+###  Error Handling
+
 In case of exceptions, the script captures and prints the error:
 
-python
+```python
 Copy code
 except Exception as e:
     print(f"An error occurred: {e}")
+```
+
 This ensures that any issues during the request process are logged.
 
 Request Throttling
