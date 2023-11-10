@@ -97,7 +97,6 @@ If a course is successfully registered, it's removed from the list. Otherwise, a
 In case of exceptions, the script captures and prints the error:
 
 ```python
-Copy code
 except Exception as e:
     print(f"An error occurred: {e}")
 ```
@@ -108,9 +107,10 @@ This ensures that any issues during the request process are logged.
 
 To manage the load on the server, the script waits for 5 seconds between registration attempts:
 
-python
-Copy code
+```python
 time.sleep(5)
+```
+
 This delay helps to avoid overwhelming the server or hitting rate limits.
 
 This automation script streamlines the course registration process. However, users should comply with Sharif University's policies regarding automated interactions with their systems.
