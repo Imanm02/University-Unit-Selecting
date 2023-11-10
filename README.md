@@ -1,5 +1,5 @@
 # University-Unit-Selecting
-Python script to automate taking courses in the Sharif University of Technology selecting units process
+This repository contains a Python script designed to automate taking courses in the Sharif University of Technology selecting units process.
 
 # Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
