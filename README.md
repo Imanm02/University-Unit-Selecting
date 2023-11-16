@@ -157,5 +157,8 @@ type VahedJobResponse struct {
 
 Defines structs for JSON request (`VahedRequest`) and response (`VahedResponse`, `VahedJobResponse`).
 
+#### Constants and Global Variables
+
+
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
