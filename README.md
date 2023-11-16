@@ -208,7 +208,7 @@ func findTimeDiff(client *http.Client) (time.Duration, error) { ... }
 
 Calculates the time difference between the client and server to synchronize requests.
 
-
+#### Sending Registration Requests
 
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
