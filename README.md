@@ -116,5 +116,20 @@ This automation script streamlines the course registration process. However, use
 
 ### Golang code walkthrough
 
+#### Import Statements
+```go
+import (
+	"bytes"
+	"compress/gzip"
+	"encoding/json"
+	"fmt"
+	"io"
+	"net/http"
+	"strings"
+	"sync"
+	"time"
+)
+```
+
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
