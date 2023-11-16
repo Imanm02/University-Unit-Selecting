@@ -105,6 +105,7 @@ func main() {
 			// Send registration request in a separate goroutine
 			go reqToEdu(client, vahed)
 		}
+		// Wait for all goroutines to finish
 		wg.Wait()
 		time.Sleep(time.Duration(waitCount) * time.Second)
 	}
