@@ -112,6 +112,7 @@ func main() {
 	}
 }
 
+// findTimeDiff calculates the time difference between client and server
 func findTimeDiff(client *http.Client) (time.Duration, error) {
 	req := initRequest(vaheds[0])
 	time_start := time.Now()
