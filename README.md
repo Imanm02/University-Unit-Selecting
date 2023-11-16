@@ -170,6 +170,8 @@ var vaheds = []*VahedRequest{ ... }
 
 Sets constants for API URL and Authorization token, and initializes global variables for synchronization and course requests.
 
+#### Main Function
+
 
 
 ## Maintainer
