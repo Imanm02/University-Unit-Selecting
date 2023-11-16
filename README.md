@@ -210,5 +210,11 @@ Calculates the time difference between the client and server to synchronize requ
 
 #### Sending Registration Requests
 
+func reqToEdu(client *http.Client, request *VahedRequest) {
+	defer wg.Done()
+	...
+}
+
+
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
