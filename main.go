@@ -89,7 +89,9 @@ func main() {
 		fmt.Println(err)
 		return
 	}
+	// Sleep for the calculated delay time
 	time.Sleep(delay)
+
 	waitCount := 5
 	if len(vaheds) > waitCount {
 		waitCount = len(vaheds)
