@@ -182,6 +182,7 @@ func initRequest(request *VahedRequest) *http.Request {
 	return req
 }
 
+// parseResponse handles the parsing of the server's response
 func parseResponse(res *http.Response) (*VahedResponse, error) {
 	var Resp VahedResponse
 	responseBuf := new(bytes.Buffer)
