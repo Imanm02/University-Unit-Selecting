@@ -148,6 +148,7 @@ func reqToEdu(client *http.Client, request *VahedRequest) {
 		return
 	}
 	mu.Unlock()
+	// Parse and handle the response
 	resp, err := parseResponse(res)
 	if err != nil {
 		fmt.Println(err)
