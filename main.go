@@ -83,6 +83,7 @@ var vaheds = []*VahedRequest{
 
 func main() {
 	client := &http.Client{}
+	// Calculate the delay needed to sync with the server time
 	delay, err := findTimeDiff(client)
 	if err != nil {
 		fmt.Println(err)
