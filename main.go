@@ -13,6 +13,7 @@ import (
 	"time"
 )
 
+// Struct definitions for JSON request and response
 type VahedRequest struct {
 	Action string `json:"action"`
 	Course string `json:"course"`
