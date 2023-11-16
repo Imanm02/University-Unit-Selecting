@@ -229,6 +229,9 @@ Prepares an HTTP request with the necessary headers and JSON payload.
 
 #### Response Parsing
 
+```go
+func parseResponse(res *http.Response) (*VahedResponse, error) { ... }
+```
 
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
