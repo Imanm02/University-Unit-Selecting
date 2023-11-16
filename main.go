@@ -154,6 +154,7 @@ func reqToEdu(client *http.Client, request *VahedRequest) {
 		fmt.Println(err)
 		return
 	}
+	// Output the result of the registration attempt
 	if len(resp.Jobs) > 0 {
 		fmt.Println(resp.Jobs[0].ID, resp.Jobs[0].Result)
 	}
