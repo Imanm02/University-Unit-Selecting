@@ -217,5 +217,9 @@ func reqToEdu(client *http.Client, request *VahedRequest) {
 }
 ```
 
+Handles sending course registration requests to the server and processing responses.
+
+
+
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
