@@ -221,6 +221,9 @@ Handles sending course registration requests to the server and processing respon
 
 #### Request Initialization
 
+```go
+func initRequest(request *VahedRequest) *http.Request { ... }
+```
 
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
