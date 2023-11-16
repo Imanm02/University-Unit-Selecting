@@ -9,7 +9,9 @@ This repository contains a Python script designed to automate taking courses in 
 
 This script is designed to automate the process of course registration at Sharif University of Technology. Below is a detailed walkthrough of the script components and functionalities.
 
-### Environment Setup
+### Python code walkthrough
+
+#### Environment Setup
 
 Before the script starts, it loads necessary environment variables:
 
@@ -22,7 +24,7 @@ load_dotenv()
 
 `load_dotenv()` reads the `.env` file, which should be located in the same directory as the script, and loads the variables into the environment. This is where the script gets sensitive information, such as the `Authorization` token.
 
-### Setting Up Headers
+#### Setting Up Headers
 
 The script sets up the headers for the HTTP request:
 
@@ -38,7 +40,7 @@ site_headers = {
 
 `site_headers` includes the `Authorization` header, which uses the `AUTHORIZATION_TOKEN` from the environment variables.
 
-### Courses to Register
+#### Courses to Register
 
 The script defines the courses to register for:
 
@@ -48,7 +50,7 @@ courses = [('40254-1', '3'), ('40124-3', '3')]
 
 This list of tuples holds the course IDs and the corresponding units.
 
-### Registration Function
+#### Registration Function
 
 The `register_course` function handles the API request to register for a course:
 
@@ -61,7 +63,7 @@ def register_course(course_code, units):
 
 It constructs the data payload with the course details and sends a POST request to the university's course registration API.
 
-### Main Registration Loop
+#### Main Registration Loop
 
 The script runs a loop to attempt course registration:
 
@@ -75,7 +77,7 @@ while courses:
 
 It iterates over a copy of the `courses` list, trying to register for each course. After each attempt, the script sleeps for a short period to prevent rapid-fire requests.
 
-### Handling Responses
+#### Handling Responses
 
 The script checks the API response after each registration attempt:
 
@@ -89,7 +91,7 @@ else:
 
 If a course is successfully registered, it's removed from the list. Otherwise, an error message is displayed.
 
-### Error Handling
+#### Error Handling
 
 In case of exceptions, the script captures and prints the error:
 
@@ -100,7 +102,7 @@ except Exception as e:
 
 This ensures that any issues during the request process are logged.
 
-### Request Throttling
+#### Request Throttling
 
 To manage the load on the server, the script waits for 5 seconds between registration attempts:
 
