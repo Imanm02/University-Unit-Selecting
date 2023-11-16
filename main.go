@@ -92,6 +92,7 @@ func main() {
 	// Sleep for the calculated delay time
 	time.Sleep(delay)
 
+	// Set the number of concurrent goroutines based on number of courses
 	waitCount := 5
 	if len(vaheds) > waitCount {
 		waitCount = len(vaheds)
