@@ -117,6 +117,7 @@ This automation script streamlines the course registration process. However, use
 ### Golang code walkthrough
 
 #### Import Statements
+
 ```go
 import (
 	"bytes"
@@ -133,7 +134,7 @@ import (
 
 Imports necessary packages for HTTP requests, JSON handling, compression, and concurrency.
 
-
+#### Import Statements
 
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
