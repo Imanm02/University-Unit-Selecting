@@ -160,6 +160,7 @@ func reqToEdu(client *http.Client, request *VahedRequest) {
 	}
 }
 
+// initRequest prepares the HTTP request with necessary headers and payload
 func initRequest(request *VahedRequest) *http.Request {
 	payloadBuf := new(bytes.Buffer)
 	json.NewEncoder(payloadBuf).Encode(request)
