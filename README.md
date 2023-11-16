@@ -225,5 +225,9 @@ Handles sending course registration requests to the server and processing respon
 func initRequest(request *VahedRequest) *http.Request { ... }
 ```
 
+Prepares an HTTP request with the necessary headers and JSON payload.
+
+
+
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
