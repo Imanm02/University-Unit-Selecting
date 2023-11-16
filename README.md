@@ -134,7 +134,26 @@ import (
 
 Imports necessary packages for HTTP requests, JSON handling, compression, and concurrency.
 
-#### Import Statements
+#### Struct Definitions
+
+```go
+type VahedRequest struct {
+	Action string `json:"action"`
+	Course string `json:"course"`
+	Units  int32  `json:"units"`
+}
+
+type VahedResponse struct {
+	Jobs              []*VahedJobResponse `json:"jobs"`
+	RegisterationTime int64               `json:"registrationTime"`
+	Time              int64               `json:"time"`
+}
+
+type VahedJobResponse struct {
+	ID     string `json:"courseId"`
+	Result string `json:"result"`
+}
+```
 
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
