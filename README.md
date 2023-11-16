@@ -159,6 +159,13 @@ Defines structs for JSON request (`VahedRequest`) and response (`VahedResponse`,
 
 #### Constants and Global Variables
 
+const EduUrl = "https://my.edu.sharif.edu/api/reg"
+const AuthToken = "your_auth_token"
+
+var mu sync.Mutex
+var wg sync.WaitGroup
+var vaheds = []*VahedRequest{ ... }
+
 
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
