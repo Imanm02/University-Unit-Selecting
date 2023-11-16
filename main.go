@@ -139,6 +139,7 @@ func findTimeDiff(client *http.Client) (time.Duration, error) {
 // reqToEdu sends a course registration request to the server
 func reqToEdu(client *http.Client, request *VahedRequest) {
 	defer wg.Done()
+	// Initialize and send the HTTP request
 	req := initRequest(request)
 	mu.Lock()
 	res, err := client.Do(req)
