@@ -168,5 +168,9 @@ var wg sync.WaitGroup
 var vaheds = []*VahedRequest{ ... }
 ```
 
+Sets constants for API URL and Authorization token, and initializes global variables for synchronization and course requests.
+
+
+
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
