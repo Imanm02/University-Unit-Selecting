@@ -97,6 +97,8 @@ func main() {
 	if len(vaheds) > waitCount {
 		waitCount = len(vaheds)
 	}
+
+	// Continuous loop for course registration
 	for {
 		for _, vahed := range vaheds {
 			wg.Add(1)
