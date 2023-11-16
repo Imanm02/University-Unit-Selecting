@@ -35,6 +35,7 @@ type VahedJobResponse struct {
 const EduUrl = "https://my.edu.sharif.edu/api/reg"
 const AuthToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHVkZW50SWQiOiI5OTEwNTMzNCIsImNyZWF0ZWRBdCI6MTY5NDMxMjI1NDkyMiwic3VwZXJVc2VyIjpmYWxzZSwiaWF0IjoxNjk0MzEyMjU0fQ.ZgJq_CqF8lYMNQSC3pu7mLSvWf10rkw-yx9ogLVYtMA"
 
+// Mutex and WaitGroup for handling concurrent requests safely
 var mu sync.Mutex
 var wg sync.WaitGroup
 var vaheds = []*VahedRequest{
