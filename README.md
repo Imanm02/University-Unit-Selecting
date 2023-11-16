@@ -227,6 +227,7 @@ func initRequest(request *VahedRequest) *http.Request { ... }
 
 Prepares an HTTP request with the necessary headers and JSON payload.
 
+#### Response Parsing
 
 
 ## Maintainer
