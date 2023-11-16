@@ -172,6 +172,29 @@ Sets constants for API URL and Authorization token, and initializes global varia
 
 #### Main Function
 
+func main() {
+	client := &http.Client{}
+	delay, err := findTimeDiff(client)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	time.Sleep(delay)
+
+	waitCount := 5
+	if len(vaheds) > waitCount {
+		waitCount = len(vaheds)
+	}
+
+	for {
+		for _, vahed := range vaheds {
+			wg.Add(1)
+			go reqToEdu(client, vahed)
+		}
+		wg.Wait()
+		time.Sleep(time.Duration(waitCount) * time.Second)
+	}
+}
 
 
 ## Maintainer
