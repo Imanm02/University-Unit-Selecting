@@ -198,5 +198,7 @@ func main() {
 }
 ```
 
+The main function initializes an HTTP client, calculates the delay for time synchronization, and runs a loop to process course registrations concurrently.
+
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
