@@ -233,5 +233,9 @@ Prepares an HTTP request with the necessary headers and JSON payload.
 func parseResponse(res *http.Response) (*VahedResponse, error) { ... }
 ```
 
+Parses the server's response and handles different response scenarios.
+
+This script showcases Go's capabilities in handling HTTP requests, concurrent processing, and JSON data handling in a practical application scenario.
+
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
