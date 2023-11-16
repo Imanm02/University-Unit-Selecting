@@ -107,6 +107,7 @@ func main() {
 		}
 		// Wait for all goroutines to finish
 		wg.Wait()
+		// Sleep between batches of requests
 		time.Sleep(time.Duration(waitCount) * time.Second)
 	}
 }
