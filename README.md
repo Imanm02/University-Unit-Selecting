@@ -114,5 +114,7 @@ This delay helps to avoid overwhelming the server or hitting rate limits.
 
 This automation script streamlines the course registration process. However, users should comply with Sharif University's policies regarding automated interactions with their systems.
 
+### Golang code walkthrough
+
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
