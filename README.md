@@ -172,6 +172,7 @@ Sets constants for API URL and Authorization token, and initializes global varia
 
 #### Main Function
 
+```go
 func main() {
 	client := &http.Client{}
 	delay, err := findTimeDiff(client)
@@ -195,7 +196,7 @@ func main() {
 		time.Sleep(time.Duration(waitCount) * time.Second)
 	}
 }
-
+```
 
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
