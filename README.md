@@ -202,6 +202,9 @@ The `main` function initializes an HTTP client, calculates the delay for time sy
 
 #### Time Synchronization
 
+```go
+func findTimeDiff(client *http.Client) (time.Duration, error) { ... }
+```
 
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
