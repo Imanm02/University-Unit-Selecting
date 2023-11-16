@@ -102,6 +102,7 @@ func main() {
 	for {
 		for _, vahed := range vaheds {
 			wg.Add(1)
+			// Send registration request in a separate goroutine
 			go reqToEdu(client, vahed)
 		}
 		wg.Wait()
