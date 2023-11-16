@@ -155,7 +155,7 @@ type VahedJobResponse struct {
 }
 ```
 
-Defines structs for JSON request (VahedRequest) and response (VahedResponse, VahedJobResponse).
+Defines structs for JSON request (`VahedRequest`) and response (`VahedResponse`, `VahedJobResponse`).
 
 ## Maintainer
 - [Iman Mohammadi](https://github.com/Imanm02)
